@@ -3,13 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Oxford City & University Walking Tour: Rory in Oxford</title>
+    <title>Embedded Google Form</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #d4ceb5;
+            margin: 0;
+        }
+        .header {
+            width: 100%;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .form-container {
+            width: 100%;
+            max-width: 640px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        iframe {
+            width: 100%;
+            border: none;
+        }
     </style>
 </head>
 <body>
+    <div class="header">
+        <img src="https://lh7-us.googleusercontent.com/SmB4fgfKPp9N8YvKv5EFyyW9CkJxpdabdpC_ZUMMJFYzEvLFyKzJkvOQQY28YL5pshNYDvSc8gxc7kFTLGPB61zpcfjxLbJL_WS5ERGKc2ZW8yy4sEQuwaGzeYd7KGhRnMnOrSkUrwtZNY9cBNIxJ4PGDEo13A" alt="Header Image" width="640" />
+    </div>
     <div class="form-container">
-       <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfi5WOgAdkf45Kstg7IMqo0cBuMliD6UJQ9MTiugxVXzf9ygw/viewform?embedded=true" width="1000" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfi5WOgAdkf45Kstg7IMqo0cBuMliD6UJQ9MTiugxVXzf9ygw/viewform?embedded=true" width="640" height="748" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </div>
 </body>
 </html>
