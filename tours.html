@@ -65,6 +65,7 @@
         }
     </style>
 </head>
+  
 <body>
     <div class="header">
         <img src="roryinoxford.github.io/radcam_header_round.png" alt="Header Image" />
@@ -73,20 +74,7 @@
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfi5WOgAdkf45Kstg7IMqo0cBuMliD6UJQ9MTiugxVXzf9ygw/viewform?embedded=true"></iframe>
     </div>
 
-  <body>
-  <!-- Other HTML content -->
 
-  <!-- Cookie Consent Banner -->
-  <div id="cookieConsent" style="display: none; position: fixed; bottom: 0; width: 100%; background-color: #000; color: #fff; text-align: center; padding: 10px;">
-    This website uses cookies to ensure you get the best experience. <a href="/cookie-policy" style="color: #f1d600;">Learn more</a>
-    <button id="acceptCookies" style="background-color: #f1d600; border: none; padding: 5px 10px; margin-left: 10px;">Got it!</button>
-  </div>
-
-  <!-- Other HTML content -->
-</body>
-
-  <body>
-  <!-- Other HTML content -->
 
   <!-- Cookie Consent Banner -->
   <div id="cookieConsent" style="display: none; position: fixed; bottom: 0; width: 100%; background-color: #000; color: #fff; text-align: center; padding: 10px;">
@@ -98,21 +86,21 @@
   <script>
     document.addEventListener("DOMContentLoaded", function() {
       // Check if consent is already given
-      if (!localStorage.getItem("cookieConsent")) {
-        document.getElementById("cookieConsent").style.display = "block";
+      if (!localStorage.getItem("acceptCookies")) {
+        document.getElementById("acceptCookies").style.display = "block";
       }
 
       // Handle consent button click
       document.getElementById("acceptCookies").addEventListener("click", function() {
         localStorage.setItem("cookieConsent", "true");
-        document.getElementById("cookieConsent").style.display = "none";
+        document.getElementById("acceptCookies").style.display = "none";
       });
     });
   </script>
 
     <script>
      grantButton.addEventListener("click", function() {
-    localStorage.setItem("consentGranted", "true");
+    localStorage.setItem("acceptCookies", "true");
     function gtag() { dataLayer.push(arguments); }
 
     gtag('consent', 'update', {
