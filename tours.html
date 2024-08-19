@@ -5,37 +5,18 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     
-    // Function to set Google Tag Manager consent state
-    function setGTMConsent(denied) {
-      gtag('consent', 'update', {
-        ad_user_data: granted ? 'granted' : 'denied',
-        ad_personalization: granted ? 'granted' : 'denied',
-        ad_storage: granted ? 'granted' : 'denied',
-        analytics_storage: granted ? 'granted' : 'denied'
-      });
-    }
-
-    // Check if the user has previously accepted cookies
-    document.addEventListener("DOMContentLoaded", function() {
-      const cookieConsent = localStorage.getItem("cookieConsent");
-
-      if (cookieConsent === "true") {
-        // User has accepted cookies in a previous session, set consent accordingly
-        setGTMConsent(true);
-      } else {
-        // Show the consent banner if no consent is found
-        document.getElementById("cookieConsent").style.display = "block";
-      }
-
-      // Handle consent button click
-      document.getElementById("acceptCookies").addEventListener("click", function() {
-        localStorage.setItem("cookieConsent", "true");
-        document.getElementById("cookieConsent").style.display = "none";
-
-        // Update Google Tag Manager consent
-        setGTMConsent(true);
-      });
-    });
+     <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('consent', 'default', {
+    'ad_user_data': 'denied',
+    'ad_personalization': 'denied',
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied',
+    'wait_for_update': 500,
+  });
+  gtag('js', new Date());
+  gtag('config', 'AW-16609436442');
   </script>
 
   <!-- Google tag (gtag.js) -->
