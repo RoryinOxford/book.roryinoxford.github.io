@@ -6,7 +6,7 @@
     function gtag(){dataLayer.push(arguments);}
     
     // Function to set Google Tag Manager consent state
-    function setGTMConsent(granted) {
+    function setGTMConsent(denied) {
       gtag('consent', 'update', {
         ad_user_data: granted ? 'granted' : 'denied',
         ad_personalization: granted ? 'granted' : 'denied',
