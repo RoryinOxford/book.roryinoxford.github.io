@@ -46,21 +46,93 @@
   <link rel="icon" href="favicon.png" type="image/x-icon">
   <title>Book Tour: Rory in Oxford</title>
   <style>
-    /* Your CSS styling remains unchanged */
+    html, body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #d4ceb5;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden; /* Prevent horizontal overflow */
+    }
+    .header {
+      width: 100%;
+      text-align: center;
+      margin: 20px 0;
+    }
+    .header img {
+      width: 100%;
+      max-width: 700px;
+      height: auto; /* Ensure image scales proportionally */
+    }
+    .form-container {
+      width: 100%;
+      max-width: 640px;
+      box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+      background-color: #d4ceb5;
+      padding: 0px;
+      border-radius: 0px;
+    }
+    iframe {
+      width: 100%;
+      height: 1200px; 
+      border: none;
+    }
+
+    /* Cookie Consent Banner Styles */
+    #cookieConsent {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #000;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      z-index: 1000;
+    }
+    #cookieConsent p {
+      font-size: 18px;
+      margin: 0;
+    }
+    #cookieConsent a {
+      color: #f1d600;
+      font-weight: bold;
+    }
+    #acceptCookies {
+      background-color: #f1d600;
+      color: #000;
+      border: none;
+      padding: 15px 30px;
+      margin-top: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
   </style>
 </head>
+  
 <body>
+  <div class="header">
+    <img src="roryinoxford.github.io/radcam_header_round.png" alt="Header Image" />
+  </div>
+
   <!-- Cookie Consent Banner -->
-  <div id="cookieConsent" style="display: none; position: fixed; bottom: 0; width: 100%; background-color: #000; color: #fff; text-align: center; padding: 20px; z-index: 1000;">
-    <p style="font-size: 18px; margin: 0;">
-      This website uses cookies to ensure you get the best experience. <a href="/cookie-policy" style="color: #f1d600; font-weight: bold;">Learn more</a>
+  <div id="cookieConsent">
+    <p>
+      This website uses cookies to ensure you get the best experience. <a href="/cookie-policy">Learn more</a>
     </p>
-    <button id="acceptCookies" style="background-color: #f1d600; color: #000; border: none; padding: 15px 30px; margin-top: 10px; font-size: 16px; font-weight: bold; cursor: pointer; border-radius: 5px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
+    <button id="acceptCookies">
       Got it!
     </button>
   </div>
 
-  <!-- Your other HTML content -->
+  <div class="form-container">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfi5WOgAdkf45Kstg7IMqo0cBuMliD6UJQ9MTiugxVXzf9ygw/viewform?embedded=true"></iframe>
+  </div>
 
 </body>
 </html>
